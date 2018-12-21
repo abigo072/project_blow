@@ -12,3 +12,81 @@
     display: table;
     clear: both;
 }
+html {
+    font-size: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1;
+}
+.page__cell {
+    max-width: 1200px;
+    margin: 2% auto;
+}
+.page {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+}
+.page__background {
+    padding-top: 65%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-shadow: -40px 40px 100px 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.left-column {
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    top: 0;
+    right: 95%;
+    bottom: 0;
+    left: 0;
+}
+.right-column {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 5%;
+}
+.left-column__some-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+.button__case {
+    max-width: 80%;
+}
+.text {
+    position: relative;
+    transform-origin: 30% 0;
+    transform: rotate(270deg);
+    white-space: nowrap;
+    top: 75%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.left-column__button {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 0.5rem;
+}
