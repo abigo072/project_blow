@@ -7,7 +7,8 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.clearfix::after {
+.clearfix::after,
+.header::after{
     content: "";
     display: table;
     clear: both;
@@ -17,7 +18,7 @@ html {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: #000;
     font-size: 1rem;
     line-height: 1;
@@ -33,7 +34,7 @@ body {
     -webkit-background-size: cover;
     background-attachment: fixed;
 }
-.page__background {
+.main {
     padding-top: 65%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -43,7 +44,7 @@ body {
     border-radius: 5px;
     position: relative;
 }
-.left-column {
+.main__left {
     background-color: white;
     border-radius: 5px 0 0 5px;
     position: absolute;
@@ -52,41 +53,129 @@ body {
     bottom: 0;
     left: 0;
 }
-.right-column {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 5%;
-}
-.left-column__some-text {
+.left__some-text {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 10%;
     left: 0;
-    font-size: 1.375rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
-.button__case {
-    max-width: 80%;
-}
-.text {
+.some-text__text-regular {
     position: relative;
-    transform-origin: 30% 0;
+    transform-origin: 40% 0;
     transform: rotate(270deg);
     white-space: nowrap;
-    top: 75%;
+    top: 70%;
     right: 0;
     bottom: 0;
     left: 0;
+    color:#b2b2b2;
 }
-.left-column__button {
+.some-text__text-bolt {
+    color: #000;
+    font-weight: 700;
+}
+.left__button {
     position: absolute;
     top: 90%;
     right: 0;
     bottom: 0;
     left: 0;
     text-align: center;
-    padding-top: 0.5rem;
+    padding-top: 50%;
 }
+.button__case {
+    max-width: 50%;
+    text-align: center;
+}
+.main-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 5%;
+}
+.right__row {
+
+}
+.right__cell{
+    max-width: 1000px;
+    margin: 5% 6%;
+    padding: 0 0;
+}
+.header {
+    position: relative;
+    padding: 1rem 0;
+}
+.logo-name {
+    position: absolute;
+    font-weight: 900;
+    font-size: 1.8rem;
+    bottom: 0;
+    left: 0;
+}
+.nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list:last-child {
+    margin-right: 0;
+}
+.nav__item {
+
+}
+.nav__link {
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.4rem;
+}
+.nav__link:hover {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.bottom__button {
+    margin-top: 50%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.button__explore-work {
+    background-color: black;
+    color: #d5ae91;
+    border-radius: 30px;
+    box-shadow: -1rem 2rem 5rem 0.8rem black;
+    padding: 0.5rem 2.8rem;
+}
+.button__explore-work:hover {
+    background-color: #2e2e2e;
+    color: white;
+    border-radius: 30px;
+}
+.nav__link:active,
+.button__explore-work:active{
+    background-color: black;
+    color: #ffb203;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
